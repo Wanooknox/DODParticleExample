@@ -1,4 +1,4 @@
-package com.company.ThreadedDOD;
+package com.company.BasicDOD.ThreadedDOD;
 
 public class ThreadedDODDemo {
 

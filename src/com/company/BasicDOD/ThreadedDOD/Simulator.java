@@ -1,5 +1,7 @@
-package com.company.ThreadedDOD;
+package com.company.BasicDOD.ThreadedDOD;
 
+import com.company.BasicDOD.ParticleData;
+import com.company.BasicDOD.ParticleMovementSystem;
 import com.company.DemoCommon.Vector2;
 
 import java.util.ArrayList;
