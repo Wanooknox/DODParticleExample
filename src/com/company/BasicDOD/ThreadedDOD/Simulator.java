@@ -68,6 +68,7 @@ public class Simulator {
                     movementSystem.update(
                             particleData.position,
                             particleData.velocity);
+                    //particles.set(j, movementSystem.updateFunctional(particleData.position, particleData.velocity));
                 }
                 return null;
             };
