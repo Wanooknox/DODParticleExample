@@ -17,3 +17,8 @@ The Data-Oriented Design demo illustrates a simple particle implementation using
 
 Launch [BasicDODDemo.java](src/com/company/BasicDOD/BasicDODDemo.java) to see it run.
 
+### Threaded Data-Oriented Design Demo
+
+The Threaded demo illustrates the same basic implementation as the Data-Oriented Design demo, with the addition of multi-threading. The threads are fed subdivisions of the main array of particles, rather than splitting off multiple new arrays, which avoids time wasted on extra allocation of memory. This version should lead to a roughly 10x (YMMV) speed increase. 
+
+Launch [BasicDODDemo.java](src/com/company/BasicDOD/ThreadedDOD/ThreadedDODDemo.java) to see it run.
