@@ -1,4 +1,4 @@
-package com.company.ThreadedDOD;
+package com.company.BasicDOD.ThreadedDOD;
 
 import com.company.BasicDOD.ParticleData;
 import com.company.BasicDOD.ParticleMovementSystem;
