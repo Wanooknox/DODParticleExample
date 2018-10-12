@@ -9,5 +9,5 @@ You can see my presentation here: https://www.youtube.com/watch?v=AxprodpsoYk
 
 The Object-Oriented Programming demo illustrates a simple particle implementation using common OOP practises. Each Particle object has instance fields and methods together. In each itteration we loop over the particles and call the `update()` method.
 
-Launch [BasicOOPDemo.java](BasicOOPDemo.java) to see it run.
+Launch [BasicOOPDemo.java](src/com/company/BasicOOP/BasicOOPDemo.java) to see it run.
 
