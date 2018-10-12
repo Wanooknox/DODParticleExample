@@ -60,13 +60,12 @@ public class Simulator {
             Callable<Void> runnable = () -> {
                 final int chunkStart = chunkSize * finalI;
                 final int chunkEnd = chunkStart + chunkSize - 1;
-                // System.out.printf("Thread %d: %d -> %d%n", finalI, chunkStart, chunkEnd);
+
                 for (int j = chunkStart; j < chunkEnd; j++) {
                     ParticleData particleData = subparticles.get(j);
                     movementSystem.update(
                             particleData.position,
                             particleData.velocity);
-                    // subparticles.set(finalI, movementSystem.updateFunctional(particles.get(finalI).position, particles.get(finalI).velocity));
                 }
                 return null;
             };
@@ -83,17 +82,6 @@ public class Simulator {
         } catch (InterruptedException | ExecutionException ignore) {
 
         }
-
-        // int size = particles.size();
-        // for (int i = 0; i < size; i++) {
-            // it is faster to update each particle via mutation
-            // movementSystem.update(
-            //         particles.get(i).position,
-            //         particles.get(i).velocity);
-
-            // the functional construction leads to a roughly 2x increase in deltaTime
-            //particles.set(i, movementSystem.updateFunctional(particles.get(i).position, particles.get(i).velocity));
-        // }
     }
 
     //region Misc Supporting code
