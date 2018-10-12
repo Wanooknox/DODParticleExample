@@ -7,7 +7,7 @@ You can see my presentation here: https://www.youtube.com/watch?v=AxprodpsoYk
 # Quick Breakdown
 ### Object-Oriented Programming Demo
 
-The Object-Oriented Programming demo illustrates a simple particle implementation using common OOP practises. Each `Particle` object has instance fields and methods together. In each iteration we loop over the particles and call the `update()` method.
+The Object-Oriented Programming demo illustrates a simple particle implementation using common OOP practises. Each `Particle` object has instance fields and methods together. In each iteration we loop over the particles and call the `update()` method.<sup>1</sup>
 
 Launch [BasicOOPDemo.java](src/com/company/BasicOOP/BasicOOPDemo.java) to see it run.
 
@@ -22,3 +22,6 @@ Launch [BasicDODDemo.java](src/com/company/BasicDOD/BasicDODDemo.java) to see it
 The Threaded demo illustrates the same basic implementation as the Data-Oriented Design demo, with the addition of multi-threading. The threads are fed subdivisions of the main array of particles, rather than splitting off multiple new arrays, which avoids time wasted on extra allocation of memory. This version should lead to a roughly 10x (YMMV) speed increase. 
 
 Launch [ThreadedDODDemo.java](src/com/company/BasicDOD/ThreadedDOD/ThreadedDODDemo.java) to see it run.
+
+###### Footnotes
+<sup>1</sup> For extra fun, open [Particle.java](src/com/company/BasicOOP/Particle.java) and comment out the extra 'fat' data. This data is NOT used by the logic and removing it doubles the performance on my laptop. See line 11: `private SaturatedFat fattener = new SaturatedFat();`
