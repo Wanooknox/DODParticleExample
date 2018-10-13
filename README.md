@@ -4,6 +4,11 @@ Just a quick example of some very basic particle behavior. Compares the performa
 
 You can see my presentation here: https://www.youtube.com/watch?v=AxprodpsoYk
 
+I've included a [maven pom.xml](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html#The_POM) for quick project setup. Build with:
+```
+> mvn package
+```
+
 # Quick Breakdown
 ### Object-Oriented Programming Demo
 

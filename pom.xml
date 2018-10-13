@@ -16,7 +16,7 @@
     </properties>
 
     <build>
-        <defaultGoal>compile</defaultGoal>
+        <defaultGoal>package</defaultGoal>
         <directory>${basedir}/target</directory>
         <finalName>${artifactId}-${version}</finalName>
     </build>
